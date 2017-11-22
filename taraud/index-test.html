@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  .header {
+            min-height: 600px;
+            height: 600px;
+            background-color: rgba(0,0,255,.3);
+            background-image: url('img/photos.jpg');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .img {
+            min-height: 600px;
+            height: 600px;
+            background-color: rgba(0,0,255,.3);
+            background-image: url('img/image2.jpg');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .contact {
+            min-height: 600px;
+            height: 600px;
+            background-color: rgba(0,0,255,.3);
+            background-image: url('img/photo-contact.jpg');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+  </style>
+  </head>
+  <body>
+  {{> header}}
+  <section>
+      <h2 class="text-center" id="propos">A propos</h2>
+      <div class="grid-container">
+          <div class="grid-x">
+              <article class="small-12 medium-4 cell text-center">
+                  <figure><img src="img/icon1.png" alt=""></figure>
+                  <h3>Passioné</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, alias, ea. Asperiores consequuntur, sint exercitationem, eius nobis, totam nesciunt repudiandae provident a nulla velit ipsum magni deserunt nam corrupti perspiciatis.</p>
+              </article>
+              <article class="small-12 medium-4 cell text-center">
+                  <figure><img src="img/icon2.png" alt=""></figure>
+                  <h3>Spontané</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus eum magnam repellat, ullam aperiam, dolorem voluptatem doloremque. Accusamus id qui iusto. Quisquam dolorum magnam tempora rem quas distinctio expedita.</p>
+              </article>
+              <article class="small-12 medium-4 cell text-center">
+                  <figure><img src="img/icon3.png" alt=""></figure>
+                  <h3>Curieux</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum excepturi expedita libero beatae! Quia, et officia provident praesentium enim vel laborum recusandae, maxime, incidunt ipsum magni. Reprehenderit nostrum praesentium doloremque.</p>
+              </article>
+          </div>
+          <div class="grid-x align-center arrow">
+              <a href="#imgbg" data-smooth-scroll><img src="img/arrowportfolio.png"/></a>
+          </div>
+      </div>
+  </section>
+  <section class="img" id="imgbg">
+      <div class="grid-x align-center arrow">
+          <a href="#portfolio" data-smooth-scroll><img src="img/arrowportfolio.png"/></a>
+    </div>
+  </section>
+  <section class="portfolio">
+      <h2 class="text-center" id="portfolio">Portfolio</h2>
+      <div class="grid-container">
+          <div class="grid-x small-up-4">
+              <div class="cell small-2 medium-4">
+                  <img src="img/image3.jpg" alt="">
+              </div>
+              <div class="cell small-2 medium-4">
+                  <img src="img/image4.jpg" alt="">
+              </div>
+              <div class="cell small-2 medium-4">
+                  <img src="img/image5.jpg" alt="">
+              </div>
+              <div class="cell small-2 medium-4">
+                  <img src="img/image6.jpg" alt="">
+              </div>
+              <div class="cell small-2 medium-4">
+                  <img src="img/image7.jpg" alt="">
+              </div>
+              <div class="cell small-2 medium-4">
+                  <img src="img/image8.jpg" alt="">
+              </div>
+              <div class="cell small-2 medium-4">
+                  <img src="img/image9.jpg" alt="">
+              </div>
+              <div class="cell small-2 medium-4">
+                  <img src="img/image10.jpg" alt="">
+              </div>
+          </div>
+          <div class="grid-x align-center arrow">
+            <a href="#blog" data-smooth-scroll><img src="img/arrowportfolio.png"/></a>
+          </div>
+      </div>
+  </section>
+
+  <section class="blog">
+      <h2 class="text-center" id="blog">Blog</h2>
+      <div class="grid-container">
+          <div class="grid-x">
+                  <div class="grid-container grid-x grid-margin-x">
+                    <article class="text-center small-12 medium-4 cell">
+                        <figure><img src="img/blog1.jpg" alt=""></figure>
+                        <h3>les nouveaux métiers du multimédia</h3>
+                        <time>12.09.2017</time>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, alias, ea. Asperiores consequuntur, sint exercitationem, eius nobis, totam nesciunt repudiandae provident a nulla velit ipsum magni deserunt nam corrupti perspiciatis.</p>
+                    </article>
+                      <article class="text-center small-12 medium-4 cell">
+                          <figure><img src="img/blog2.jpg" alt=""></figure>
+                          <h3>UX mon bel ux</h3>
+                          <time>14.09.2016</time>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe minus eum magnam repellat, ullam aperiam, dolorem voluptatem doloremque. Accusamus id qui iusto. Quisquam dolorum magnam tempora rem quas distinctio expedita.</p>
+                      </article>
+                      <article class="text-center small-12 medium-4 cell">
+                          <figure><img src="img/blog3.jpg" alt=""></figure>
+                          <h3>25 extensions chrome pour les wedesigners</h3>
+                          <time>16.09.2016</time>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum excepturi expedita libero beatae! Quia, et officia provident praesentium enim vel laborum recusandae, maxime, incidunt ipsum magni. Reprehenderit nostrum praesentium doloremque.</p>
+                      </article>
+                  </div>
+
+              </div>
+
+      </div>
+
+  </section>
+  <section class="contact">
+      <h2 class="text-center" id="contact">Contact</h2>
+      <div class="grid-container">
+          <div class="grid-x align-center">
+              <div class="small-8 cell">
+                  <div class="grid-container">
+                      <div class="grid-x">
+                          <div class="small-6 cell">
+                              <label for="">Prénom</label>
+                              <input type="text" placeholder="PRENOM">
+                          </div>
+                          <div class="small-6 cell">
+                              <label for="">Nom</label>
+                              <input type="text" placeholder="NOM">
+                          </div>
+                      </div>
+                      <div class="grid-x">
+                          <div class="small-6 cell">
+                              <label for="">Email</label>
+                              <input type="text" placeholder="EMAIL">
+                          </div>
+                          <div class="small-6 cell">
+                              <label for="">Telephone</label>
+                              <input type="text" placeholder="MOBILE">
+                          </div>
+                      </div>
+                      <div class="grid-x">
+                          <div class="small-12 cell">
+                              <label for="">Message</label>
+                              <textarea name="name" rows="8" cols="80" placeholder="MESSAGE"></textarea>
+                          </div>
+                      </div>
+                      <div class="grid-x">
+                          <div class="small-3 small-offset-9 cell">
+                              <input type="submit" class="button large expanded hollow" id="send">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+
+  </section>
+  <footer class="grid-container">
+      <div class="grid-x">
+          <p class="small-4 cell">COUSU MAIN AVEC AMOUR ©2016</p>
+          <div class=" small-2 small-offset-6 cell">
+              <ul class="menu">
+                  <li><a href=""><img src="img/twitter.png"></a></li>
+                  <li><a href=""><img src="img/facebook.png"></a></li>
+                  <li><a href=""><img src="img/vimeo.png"></a></li>
+              </ul>
+          </div>
+
+      </div>
+  </footer>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/dist/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
